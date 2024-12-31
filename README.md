@@ -1,12 +1,12 @@
-## Objective
+# Objective
 
 The objective of this assignment is to explore the numerical solution of ordinary differential equations (ODEs) using a modified Four-Stage Runge-Kutta (RK) method. The assignment focuses on implementing novel weighting coefficients and slope computation parameters to enhance accuracy and stability. Additionally, scalability and error analysis were performed by comparing numerical and exact solutions.
 
-## Problem Statement
+# Problem Statement
 
 We are tasked to solve the following ODE using a modified RK4 method:
 
-# Parameters:
+## Parameters:
 
 a = 3 (last two digits of roll number)
 
@@ -16,13 +16,13 @@ Domain:
 
 Initial Condition: 
 
-## Modified Four-Stage Runge-Kutta Method
+# Modified Four-Stage Runge-Kutta Method
 
 The Four-Stage RK method is given by:
 
 where:
 
-# Coefficients:
+## Coefficients:
 
 The chosen coefficients for the modified RK4 method are:
 
@@ -32,7 +32,7 @@ Slope Computation Locations ():
 
 Slope Weights (): 
 
-# Rationale for Coefficients:
+## Rationale for Coefficients:
 
 Weights ():
 
@@ -48,9 +48,9 @@ Slope Weights ():
 
 Dependence on previous slopes is gradually increased for better stability.
 
-## Numerical Implementation
+# Numerical Implementation
 
-# Parameters:
+## Parameters:
 
 a = 3, b = 1.33
 
@@ -62,7 +62,7 @@ Number of Intervals (N): 20
 
 Step Size (h):
 
-## Scalability Analysis
+# Scalability Analysis
 
 The RMSE decreases consistently as the step size is reduced, demonstrating:
 
@@ -70,7 +70,7 @@ Stability: The method remains well-behaved for smaller step sizes.
 
 Convergence: Numerical solutions approach the exact solution as .
 
-# Graphs:
+## Graphs:
 
 Numerical vs. Exact Solution:
 
@@ -80,7 +80,7 @@ RMSE vs. Step Size:
 
 A log-log plot highlighting the error reduction trend.
 
-## Conclusion
+# Conclusion
 
 1.  The modified RK4 method with chosen coefficients provides a stable and accurate solution for the given ODE.
 2.  The RMSE analysis validates the effectiveness of the coefficients, showing significant error reduction with decreasing step size.
